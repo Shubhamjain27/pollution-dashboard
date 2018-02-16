@@ -2,7 +2,7 @@ import { Component, OnInit, ElementRef, NgZone, ViewChild } from '@angular/core'
 import { FormControl } from '@angular/forms';
 import { MapsAPILoader } from '@agm/core';
 import { } from '@types/googlemaps';
-
+declare var google: any;
 @Component({
   selector: 'app-location-search',
   templateUrl: './location-search.component.html',
@@ -16,7 +16,6 @@ export class LocationSearchComponent implements OnInit {
   private searchControl: FormControl;
   public zoom: number;
   public address: string;
-  public google:any;
   @ViewChild('search') public searchElementRef: ElementRef;
 
   constructor(
