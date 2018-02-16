@@ -12,8 +12,8 @@ export class LocationSearchComponent implements OnInit {
 
   private latitude: number;
   private longitude: number;
-  private location: any;
-  private searchControl: FormControl;
+  public location: any;
+  public searchControl: FormControl;
   public zoom: number;
   public address: string;
   @ViewChild('search') public searchElementRef: ElementRef;

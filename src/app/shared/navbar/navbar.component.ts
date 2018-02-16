@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  @Input() private LocBar: any;
+  @Input() public LocBar: any;
   constructor() { }
 
   ngOnInit() {

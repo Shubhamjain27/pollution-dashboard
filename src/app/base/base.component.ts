@@ -9,12 +9,12 @@ import { BindingService } from '../shared/services/binding.service';
   styleUrls: ['./base.component.css']
 })
 export class BaseComponent implements OnInit {
-  private chartData: Array<any>;
+  public chartData: Array<any>;
   private chartData2: any;
-  private donutVal: Number;
+  public donutVal: Number;
   private result: any;
   private selectedDeviceID: any;
-  private selectedSensor: any;
+  public selectedSensor: any;
   constructor(
     private dataService: GetSensorDataService,
     private bindingService: BindingService

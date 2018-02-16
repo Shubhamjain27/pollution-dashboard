@@ -8,12 +8,12 @@ import { BindingService } from '../services/binding.service';
 })
 export class DataCardComponent implements OnInit {
   @Input() donutData: any;
-  private mainColor;
+  public mainColor;
   private secondColor: any;
-  private mainSensor: any;
-  private sensorList;
-  private dataList;
-  private smallList;
+  public mainSensor: any;
+  public sensorList;
+  public dataList;
+  public smallList;
   constructor(private bindingService: BindingService) { }
 
   ngOnInit() {
