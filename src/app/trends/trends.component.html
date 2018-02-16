@@ -1,0 +1,30 @@
+<div class="base column">
+  <div>
+    <app-navbar></app-navbar>
+  </div>
+  <div class="navbar-fixed data-bar">
+    <nav>
+      <div class="nav-wrapper light">
+        <ul class="left">
+          <li class="location-bar">
+            <app-location-search></app-location-search>
+          </li>
+          <li class="location-bar">
+            <app-location-search></app-location-search>
+          </li>
+          <li>    </li>
+          <li *ngFor="let sensor of sensors"><a class="button" (click)="toggler(sensor)">{{sensor.sensor}}</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="content">
+    <div class="grid-container">
+      <div *ngFor="let sensor of sensors" class="grid-item" [ngClass]="{hid:!sensor.show}">
+        <app-area-chart [data]="chartData" [sensor]="sensor.sensor"></app-area-chart>
+      </div>
+    </div>
+
+  </div>
+</div>

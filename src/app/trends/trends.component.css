@@ -1,0 +1,55 @@
+.base {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.light {
+  background-color: white;
+}
+
+.content {
+  position: absolute;
+  top: 128px;
+  bottom: 0px;
+  width: 100%;
+}
+
+.grid-container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grid-item {
+  width: 40%;
+  height: 30%;
+  margin: 10px;
+}
+
+.left {
+  margin-right: 10px;
+}
+
+.location-bar {
+  width: 250px;
+}
+
+.right {
+  margin-left: 20px;
+}
+
+.data-bar {
+  background-color: GREY;
+}
+
+.button{
+  color:black;
+}
+
+.hid{
+  display: none;
+  margin:0 !important;
+}

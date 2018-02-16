@@ -1,0 +1,50 @@
+.area-chart {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: white;
+    border-radius: 7px;
+  }
+  
+  ::ng-deep .line {
+    fill:none;
+    stroke: #009E9C;
+    stroke-width: 4px;
+    stroke-opacity: 0.7;
+  }
+  ::ng-deep .line2 {
+    fill: lightblue;
+    stroke: #B86AFD;
+    stroke-width: 1px;
+    stroke-opacity: 0.7;
+    
+  }
+  
+  ::ng-deep .area2 {
+    fill: lightsteelblue;
+    fill-opacity: 0.7;
+  }
+  
+  ::ng-deep .x-axis{
+    stroke-width:2px; 
+  }
+
+
+  ::ng-deep .y-axis{
+    stroke-width:2px; 
+  }
+
+  .left-scroll{
+    position: absolute;
+    z-index: 5;
+    top:calc(50% - 20px);
+  }
+
+  .right-scroll{
+    position: absolute;
+    z-index: 5;
+    top:calc(50% - 20px);
+    right:0%;
+  }
+
+  

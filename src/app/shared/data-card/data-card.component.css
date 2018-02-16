@@ -1,0 +1,42 @@
+.donut-text {
+  text-align: center;
+  color: #808080;
+}
+
+.base {
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+}
+
+.donut-container {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+
+.donut-chart {
+  height: 80%;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.otherHalf {
+  color: #808080;
+  height: 100%;
+  width: 50%;
+  float: right;
+}
+
+.right-holder {
+  height: 100%;
+}
+
+.small-donut {
+  height: 40%;
+  width: 80%;
+}

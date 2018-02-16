@@ -1,0 +1,36 @@
+<div class="base">
+
+  <div class="nav">
+    <app-navbar [LocBar]="true"></app-navbar>
+  </div>
+
+  <div class="content">
+
+    <!-- Left Region -->
+    <div class="left">
+      <div class="data-card-container">
+        <app-data-card [donutData]="donutVal"></app-data-card>
+      </div>
+      <div class="chart-air">
+        <div class="chart-container">
+          <app-area-chart [data]="chartData" [sensor]="selectedSensor"></app-area-chart>
+        </div>
+        
+      </div>
+
+    </div>
+    <!-- endregion Left -->
+    <div class="air-bar-container">
+      <app-air-bar></app-air-bar>
+    </div>
+    <!-- Right Region -->
+    <div class="right">
+      <div class="map-container">
+        <app-map-leaf></app-map-leaf>
+      </div>
+    </div>
+    <!-- endregion Right -->
+
+  </div>
+
+</div>

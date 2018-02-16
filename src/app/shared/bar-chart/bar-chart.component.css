@@ -1,0 +1,22 @@
+.d3-chart {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  background-color: #FF303E;
+}
+
+.x-axis {
+  stroke-width: 0;
+}
+
+text {
+  color: white;
+}
+
+.bar {
+  border-radius: 5px;
+}
+
+.tick line {
+  visibility: hidden;
+}

@@ -1,0 +1,22 @@
+.our-nav {
+  /* background-color: #212121; */
+  background-color: #009E9C;
+  /* background-color: white; */
+}
+
+last {
+  border-right: none !important;
+}
+
+.location-bar {
+  width: 250px;
+}
+
+a {
+  /* color: #808080; */
+  color: white;
+}
+
+.brand-logo {
+  color: white;
+}

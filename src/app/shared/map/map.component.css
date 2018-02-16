@@ -1,0 +1,14 @@
+.map-div{
+    height: 100%;
+    width:100%;
+}
+
+::ng-deep path{
+    fill: #ccc ;
+    stroke: #fff;
+    stroke-width: .2px;
+  }
+  
+ ::ng-deep path:hover {
+    fill: red;
+  }
