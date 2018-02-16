@@ -16,7 +16,7 @@ export class LocationSearchComponent implements OnInit {
   private searchControl: FormControl;
   public zoom: number;
   public address: string;
-
+  public google:any;
   @ViewChild('search') public searchElementRef: ElementRef;
 
   constructor(
