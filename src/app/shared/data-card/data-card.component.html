@@ -17,7 +17,7 @@
     <div class="row right-holder">
       <div *ngFor="let sensor of smallList; let i = index" class="col s6">
         <div class="small-donut">
-          <app-donut-chart [data]="dataList[i]" [baseColor]="secondColor" [sensor]="sensor"></app-donut-chart>
+          <app-donut-chart [data]="dataList[i]" [baseColor]="secondColor" [sensor]="{{sensor}}"></app-donut-chart>
         </div>
         <b>{{sensor}}</b> Recommended Level: 300ppm
       </div>
