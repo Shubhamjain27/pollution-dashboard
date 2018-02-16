@@ -44,7 +44,9 @@ export class LocationSearchComponent implements OnInit {
 
       autocomplete.addListener('place_changed', () => {
         this.ngZone.run(() => {
-          const place: google.maps.places.PlaceResult = autocomplete.getPlace();
+          
+          const place = autocomplete.getPlace();
+          //const place: google.maps.places.PlaceResult = autocomplete.getPlace();
 
           if (place.geometry === undefined || place.geometry === null) {
             return;
@@ -67,10 +69,10 @@ export class LocationSearchComponent implements OnInit {
         this.ngZone.run(() => {
           this.latitude = position.coords.latitude;
           this.longitude = position.coords.longitude;
-
+            //: google.maps.GeocoderRequest
           this.mapsAPILoader.load().then(() => {
             const loc = new google.maps.Geocoder();
-            const reqjson: google.maps.GeocoderRequest = {
+            const reqjson = {
               'location': { 'lat': this.latitude, 'lng': this.longitude }
             };
             loc.geocode(reqjson, (results, status) => {
